@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+
+/* Reset and base styles */
+.all {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e8e4e4;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.all h1 {
+  text-align: center;
+  color: #00d9ff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Container for About section */
+.about-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left side description */
+.about-description {
+  margin-top: 20px;
+  flex: 1;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: #ecf0f1af;
+  text-align: left;
+  min-width: 300px;
+}
+
+/* Right side icon grid */
+.about-icons {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Each highlight card */
+.highlight {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.highlight:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 122, 204, 0.6);
+}
+
+/* Icon inside highlight */
+.highlight-icon {
+  color: #00d9ff;
+  margin-bottom: 0.8rem;
+}
+
+/* Title and description */
+.highlight-title {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #02a8e9;
+}
+
+.highlight-description {
+  font-size: 0.95rem;
+  color: #bbb;
+}

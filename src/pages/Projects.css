@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 7%);
+  color: #e0e0e0;
+  font-family: 'Exo 2', sans-serif;
+  overflow-x: hidden;
+}
+
+.projects-section {
+  padding: 10rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.projects-title {
+  font-size: 2.8rem;
+  color: #00d9ff;
+  margin-bottom: 0.5rem;
+}
+
+.projects-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 1rem 0;
+  width: 100%;
+  scroll-padding: 2rem;
+  scrollbar-width: none;
+}
+
+.projects-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card {
+  min-width: 360px;
+  max-width: 380px;
+  flex: 0 0 auto;
+  background: linear-gradient(145deg, #1f1f1f, #292929);
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 12px 24px rgba(0, 217, 255, 0.25);
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 217, 255, 0.4);
+}
+
+.project-title {
+  font-size: 1.6rem;
+  color: #00d9ff;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.project-description {
+  flex-grow: 1;
+  font-size: 1.05rem;
+  color: #d0d0d0;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.project-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #00d9ff;
+  text-align: right;
+  align-self: flex-end;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #66ccff;
+}
+
+.arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #111;
+  color: #00d9ff;
+  border: none;
+  border-radius: 50%;
+  padding: 0.8rem;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background-color: #1e1e1e;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrow-btn.left {
+  left: -1.5rem;
+}
+
+.arrow-btn.right {
+  right: -1.5rem;
+}
+
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2.2rem;
+  }
+
+  .arrow-btn {
+    display: none;
+  }
+
+  .project-card {
+    min-width: 85vw;
+  }
+}
