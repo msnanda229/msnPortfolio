@@ -18,28 +18,40 @@
 
 .loader-text {
   font-family: 'Orbitron', sans-serif;
-  font-size: 3.5rem;
+  font-size: 8vw;
+  max-font-size: 3.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  background: linear-gradient(
-    120deg,
-    #00d9ff 20%,
-    #ffffff 40%,
-    #00d9ff 60%
-  );
+  letter-spacing: 0.15em;
+  background: linear-gradient(120deg, #00d9ff 20%, #ffffff 40%, #00d9ff 60%);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
   animation: textShine 3s infinite linear;
+  text-align: center;
+  padding: 0 10px;
 }
 
+/* Keyframe animation */
 @keyframes textShine {
   0% {
     background-position: 100% 0;
   }
   100% {
     background-position: -200% 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .loader-text {
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .loader-text {
+    font-size: 3.5rem;
   }
 }
