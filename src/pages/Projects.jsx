@@ -15,6 +15,16 @@ const projects = [
     description: 'A personal portfolio website to showcase my skills and projects.',
     link: 'https://msnportfolio.onrender.com/',
   },
+   {
+    "title": "MSN Choice (Chrome Extension)",
+    "description": "A Chrome extension that allows users to select text and get AI-generated answers to multiple choice questions (MCQs).",
+    "link": "https://github.com/msnanda229/msnChoice"
+  },
+  {
+    "title": "AI Email Agent Automation",
+    "description": "An AI agent that automatically sends emails based on the user-provided subject, handling content generation and dispatch.",
+    "link": "https://github.com/msnanda229/Ai_Email_Agent_Automation"
+  },
   {
     title: 'API Fetching (Forntend)',
     description: 'Frontend that fetches product data for MSN Fake Store using APIs.',
