@@ -11,10 +11,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_s16zenm',    // get from EmailJS dashboard
-        'template_zt12369',   // get from EmailJS dashboard
+        '**********',    // get from EmailJS dashboard service screte
+        '***********',   // get from EmailJS dashboard templet code
         form.current,
-        'Qcwzizi4n5rtVRIaF'        // get from EmailJS dashboard
+        '**********'        // get from EmailJS dashboard api
       )
       .then(
         (result) => {
