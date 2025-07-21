@@ -59,7 +59,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <a href="/newResume.pdf" download className="download-button" data-aos="fade-up">
+        <a href="/Medisetty_Shanmukha_Nanda.pdf" download className="download-button" data-aos="fade-up">
           Download Resume
         </a>
       </div>
